@@ -70,13 +70,26 @@ document.addEventListener('DOMContentLoaded', function() {
             const skillLevels = document.querySelectorAll('.skill-level');
             
             if (skillSectionTop < triggerBottom) {
+                // Animation has already been triggered, we don't want to do anything
+                if (skillSection.classList.contains('animated')) {
+                    return;
+                }
+                
+                // Mark as animated so we don't re-trigger
+                skillSection.classList.add('animated');
+                
+                // Animate each skill bar
                 skillLevels.forEach(skillLevel => {
-                    const width = skillLevel.style.width;
+                    // Store the target width
+                    const targetWidth = skillLevel.style.width;
+                    
+                    // Set to 0 initially
                     skillLevel.style.width = '0';
                     
+                    // Animate to target width
                     setTimeout(() => {
-                        skillLevel.style.width = width;
-                    }, 100);
+                        skillLevel.style.width = targetWidth;
+                    }, 300);
                 });
             }
         }
