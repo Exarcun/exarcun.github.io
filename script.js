@@ -84,12 +84,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     const targetWidth = skillLevel.style.width;
                     
                     // Set to 0 initially
-                    skillLevel.style.width = '0';
+                    skillLevel.style.width = '300';
                     
                     // Animate to target width
                     setTimeout(() => {
                         skillLevel.style.width = targetWidth;
-                    }, 300);
+                    }, 0);
                 });
             }
         }
