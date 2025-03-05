@@ -1,47 +1,311 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Rossi - Sviluppatore Web</title>
+    <title>Exarcun - Full Stack Dev & Tech Integration Specialist</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Mario Rossi</div>
-            <ul class="menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="progetti.html">Progetti</a></li>
-                <li><a href="contatti.html">Contatti</a></li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Exarcun</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Mario Rossi</h1>
-                <h2>Sviluppatore Web Freelance</h2>
-                <p>Aiuto aziende e professionisti a creare soluzioni web moderne, 
-                performanti e facili da usare.</p>
-                
-                <div class="buttons">
-                    <a href="progetti.html" class="btn primary">I miei progetti</a>
-                    <a href="contatti.html" class="btn secondary">Contattami</a>
+    <!-- Parallax Hero Section -->
+    <section id="home" class="hero parallax-container">
+        <div class="parallax-layer layer-back"></div>
+        <div class="parallax-layer layer-middle"></div>
+        <div class="parallax-layer layer-front"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">Exarcun</h1>
+            <h2 class="fade-in delay-1">Full Stack Developer & Technology Integration Specialist</h2>
+            <p class="fade-in delay-2">Turning complex challenges into elegant digital solutions</p>
+            <div class="hero-btns fade-in delay-3">
+                <a href="#skills" class="btn primary">Explore Skills</a>
+                <a href="#contact" class="btn secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <h2>About Me</h2>
+                    <p>Based in Switzerland with 5 years of experience as a self-taught freelancer, I specialize in creating comprehensive digital solutions that bridge technology gaps and solve real-world problems.</p>
+                    <p>I combine technical expertise with a strategic mindset to deliver systems that not only function flawlessly but also drive business growth and innovation.</p>
+                </div>
+                <div class="about-image reveal delay-1">
+                    <div class="image-container">
+                        <div class="hex-border">
+                            <div class="hex-bg"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title reveal">My Expertise</h2>
+            
+            <div class="skill-categories">
+                <div class="skill-category reveal">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Full Stack Development</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Mobile Applications</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Blockchain Integration</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category reveal delay-1">
+                    <div class="skill-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI & Automation</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Chatbots & LLM Integration</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Web Scraping</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Data Mining & Analysis</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category reveal delay-2">
+                    <div class="skill-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Business & Content</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">SaaS Development</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">E-Learning Platforms</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Technical Writing</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI-Powered Market Analyzer</h3>
+                        <p>Web scraping tool that collects and analyzes market data to provide actionable insights for investment decisions.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Data Analysis</span>
+                        </div>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="project-card reveal delay-1">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Interactive E-Learning Platform</h3>
+                        <p>Comprehensive learning management system with interactive content, progress tracking and AI-assisted tutoring.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="project-card reveal delay-2">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Multi-lingual Support Chatbot</h3>
+                        <p>Customer service automation solution that handles queries in multiple languages with advanced context understanding.</p>
+                        <div class="project-tags">
+                            <span>LLM Integration</span>
+                            <span>NLP</span>
+                            <span>API Development</span>
+                        </div>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Switzerland</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>contact@exarcun.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Availability</h3>
+                            <p>Open for select freelance projects</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form reveal delay-1">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Mario Rossi - Tutti i diritti riservati</p>
-            <div class="social">
-                <a href="https://github.com/username">GitHub</a>
-                <a href="https://linkedin.com/in/username">LinkedIn</a>
+            <div class="footer-content">
+                <div class="footer-logo">Exarcun</div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Exarcun. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
